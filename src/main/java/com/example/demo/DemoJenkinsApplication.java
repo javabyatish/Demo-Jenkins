@@ -22,7 +22,9 @@ public class DemoJenkinsApplication {
 	}
 
 	public static void main(String[] args) {
+		logger.info("Main Method execution started::");
 		SpringApplication.run(DemoJenkinsApplication.class, args);
+		logger.info("Main Method execution Stopped::");
 	}
 
 }
