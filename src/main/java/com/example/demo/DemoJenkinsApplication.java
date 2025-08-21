@@ -16,7 +16,7 @@ public class DemoJenkinsApplication {
 	public static Logger logger=LoggerFactory.getLogger(DemoJenkinsApplication.class);
 	
 	@GetMapping("/wish/{name}")
-	public String getMessage(@PathVariable String name) {
+	public void getMessage(@PathVariable String name) {
 		logger.info("Method execution started::");
 		return "Welcome to Jenkins:::    "+name;
 	}
